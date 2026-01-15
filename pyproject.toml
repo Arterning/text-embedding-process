@@ -1,11 +1,11 @@
 [project]
 name = "text-process"
 version = "0.1.0"
-description = "Text vector storage and retrieval using Milvus Lite"
+description = "Text vector storage and retrieval using Milvus"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "pymilvus[milvus-lite]>=2.4.0",
+    "pymilvus>=2.4.0",
     "sentence-transformers>=2.2.0",
     "python-dotenv>=1.0.0",
 ]

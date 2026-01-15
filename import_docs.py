@@ -11,7 +11,7 @@ from sentence_transformers import SentenceTransformer
 load_dotenv()
 
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "BAAI/bge-large-zh-v1.5")
-MILVUS_DB_PATH = os.getenv("MILVUS_DB_PATH", "./milvus_data.db")
+MILVUS_DB_URI = os.getenv("MILVUS_DB_URI", "http://localhost:19530")
 COLLECTION_NAME = os.getenv("COLLECTION_NAME", "documents")
 DOCS_DIR = Path("docs")
 
@@ -88,8 +88,8 @@ def main():
 
     print(f"\nTotal chunks to import: {len(chunks)}")
 
-    print(f"\nConnecting to Milvus: {MILVUS_DB_PATH}")
-    client = MilvusClient(MILVUS_DB_PATH)
+    print(f"\nConnecting to Milvus: {MILVUS_DB_URI}")
+    client = MilvusClient(uri=MILVUS_DB_URI)
 
     if client.has_collection(COLLECTION_NAME):
         print(f"Dropping existing collection: {COLLECTION_NAME}")

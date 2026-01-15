@@ -10,14 +10,14 @@ from sentence_transformers import SentenceTransformer
 load_dotenv()
 
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "BAAI/bge-large-zh-v1.5")
-MILVUS_DB_PATH = os.getenv("MILVUS_DB_PATH", "./milvus_data.db")
+MILVUS_DB_URI = os.getenv("MILVUS_DB_URI", "http://localhost:19530")
 COLLECTION_NAME = os.getenv("COLLECTION_NAME", "documents")
 
 
 def query(question: str, top_k: int = 5) -> list[dict]:
     """Query similar text chunks from Milvus."""
     model = SentenceTransformer(EMBEDDING_MODEL)
-    client = MilvusClient(MILVUS_DB_PATH)
+    client = MilvusClient(uri=MILVUS_DB_URI)
 
     if not client.has_collection(COLLECTION_NAME):
         print(f"Collection '{COLLECTION_NAME}' does not exist.")
