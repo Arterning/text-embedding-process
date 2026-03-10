@@ -14,4 +14,5 @@ dependencies = [
     "rank-bm25>=0.2.2",
     "numpy>=2.4.1",
     "networkx>=3.6.1",
+    "ttp>=0.10.0",
 ]

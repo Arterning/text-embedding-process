@@ -1459,6 +1459,7 @@ dependencies = [
     { name = "rank-bm25" },
     { name = "sentence-transformers" },
     { name = "setfit" },
+    { name = "ttp" },
 ]
 
 [package.metadata]
@@ -1472,6 +1473,7 @@ requires-dist = [
     { name = "rank-bm25", specifier = ">=0.2.2" },
     { name = "sentence-transformers", specifier = ">=2.2.0" },
     { name = "setfit", specifier = ">=1.0.0" },
+    { name = "ttp", specifier = ">=0.10.0" },
 ]
 
 [[package]]
@@ -1599,6 +1601,15 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/37/92/e97fcc6b2c27cdb87ce5ee063d77f8f26f19f06916aa680464c8104ef0f6/triton-3.5.1-cp313-cp313t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:0b4d2c70127fca6a23e247f9348b8adde979d2e7a20391bfbabaac6aebc7e6a8", size = 170579924, upload-time = "2025-11-11T17:41:12.455Z" },
     { url = "https://files.pythonhosted.org/packages/a4/e6/c595c35e5c50c4bc56a7bac96493dad321e9e29b953b526bbbe20f9911d0/triton-3.5.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:d0637b1efb1db599a8e9dc960d53ab6e4637db7d4ab6630a0974705d77b14b60", size = 170480488, upload-time = "2025-11-11T17:41:18.222Z" },
     { url = "https://files.pythonhosted.org/packages/16/b5/b0d3d8b901b6a04ca38df5e24c27e53afb15b93624d7fd7d658c7cd9352a/triton-3.5.1-cp314-cp314t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:bac7f7d959ad0f48c0e97d6643a1cc0fd5786fe61cb1f83b537c6b2d54776478", size = 170582192, upload-time = "2025-11-11T17:41:23.963Z" },
+]
+
+[[package]]
+name = "ttp"
+version = "0.10.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/83/e6/9169d35574be82df2a0cdd2546f4f83d0d30964cf0043fc9784df855b024/ttp-0.10.0.tar.gz", hash = "sha256:40f1ca61ee1431f5b1ab5326fb55f852a04749e9574792d45455b62c5e7ac97b", size = 64665, upload-time = "2025-11-02T08:47:50.329Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b3/c3/60abb45bd8eb973997f133eb76949523478d35dfc551a0dbd8906b6a8075/ttp-0.10.0-py3-none-any.whl", hash = "sha256:9985e0ca414e85d41493a6291a924624b9a08c48c78d2d01477cc60ba2a347c1", size = 84287, upload-time = "2025-11-02T08:47:48.656Z" },
 ]
 
 [[package]]
